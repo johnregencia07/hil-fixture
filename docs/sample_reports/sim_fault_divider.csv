@@ -1,0 +1,7 @@
+timestamp,serial,test,value,unit,low,high,result
+2026-11-03T14:54:03,UNIT-0001,divider_mv,1031.4375,mV,1550.0,1750.0,FAIL
+2026-11-03T14:54:03,UNIT-0001,divider_noise_mv,6,mV,0.0,60.0,PASS
+2026-11-03T14:54:03,UNIT-0001,rc_low_mv,2.875,mV,0.0,150.0,PASS
+2026-11-03T14:54:03,UNIT-0001,rc_high_mv,1649.625,mV,1500.0,1800.0,PASS
+2026-11-03T14:54:03,UNIT-0001,loopback_high,1,,1.0,1.0,PASS
+2026-11-03T14:54:03,UNIT-0001,loopback_low,0,,0.0,0.0,PASS

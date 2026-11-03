@@ -1,0 +1,8 @@
+reports/
+__pycache__/
+*.pyc
+firmware/build/
+firmware/sdkconfig*
+firmware/test/test_protocol
+.pytest_cache/
+.vscode/

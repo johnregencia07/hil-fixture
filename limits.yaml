@@ -1,0 +1,9 @@
+# Pass/fail limits for the test circuit (see hil/wiring.py).
+# The ESP32-S3 ADC is only good to roughly +/-50-100 mV even when calibrated,
+# and is poor near 0 V, so limits are wide enough for the instrument, not the resistors.
+divider_mv:       {low: 1550, high: 1750, unit: mV}   # 3.3 V * 10k/(10k+10k) = 1650 mV
+divider_noise_mv: {low: 0,    high: 60,   unit: mV}   # max-min over 16 samples
+rc_low_mv:        {low: 0,    high: 150,  unit: mV}   # GPIO5 driven low
+rc_high_mv:       {low: 1500, high: 1800, unit: mV}   # GPIO5 high, 10k/10k divider
+loopback_high:    {low: 1,    high: 1}                # GPIO7 reads 1 when GPIO6 driven 1
+loopback_low:     {low: 0,    high: 0}                # GPIO7 reads 0 when GPIO6 driven 0
